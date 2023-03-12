@@ -4,16 +4,233 @@
 # In[ ]:
 
 
-import os
+
+
+
+
+
+
+
+
+
+
+
 score = 0
 complete = 0
 wrong= ('''
                 Try again!''')
 
-print('Welcome to round 1')
+import Round2
+
+
+print('''                                             
+
+
+                                                  ***Welcome to round 1***
+      
+      
+                                                            ''')
 
 #+++++1
 while score == 0:
+
+    ans = input('''1. Shania Twain recently replaced refrences to Brad Pitt with which other actor in live performances of 'That Don't Impress Me Much'?''')
+    if ans == 'Ryan Reynolds' or ans == '0':
+                score += 1
+    else: print(wrong)
+                
+while score == 1:
+    ans = input('''2. How many Dharma Stations were there on/off the coast of the Island?''')
+    if ans == '6' or ans == 'six' or ans == 'Six' or ans == '0':
+                score +=1
+                
+    else: print(wrong)
+        
+while score == 2:
+    ans = input('''3. What was the number 1 single in Ireland on March 12 1983? ''')
+    if ans == 'Billie-Jean' or ans == 'Billie Jean' or ans == 'Billy Jean' or ans == 'Billy-Jean' or ans == '0' :
+                score += 1
+    else: print(wrong)    
+        
+while score == 3:
+    ans = input('''4. Who's biography is titled The Man in the Jacket?''')
+    if ans == 'Mr. Tayto' or ans == 'Mr Tayto' or ans == 'Mister Tayto' or ans == '0':
+                score += 1
+    else: print(wrong)
+        
+while score == 4:
+    ans = input('''5. What is the collective noun for a group of ferrets?''')
+    if ans == 'business' or ans == 'a business' or ans == 'Business' or ans == 'A business' or ans == 'A Business' or ans == '0':
+                score +=1
+    else:print(wrong)
+        
+while score == 5:
+    ans = input('''6. Which European country has the most timezones?''')
+    if ans == 'France' or ans == '0':
+                score += 1
+    else: print(wrong)
+        
+while score == 6:
+    ans = input('''7. What element has the atomic number 40?''')
+    if ans == 'Zirconium' or ans == 'zirconium' or ans == '0':
+                score += 1
+    else: print(wrong)
+        
+while score == 7:
+    ans = input('''8. What was Colonel Campbell's CODEC frequency in MGS 1?''')
+    if ans == '140.85' or ans == '0':
+                score += 1
+    else: print(wrong)
+        
+while score == 8:
+    ans = input('''9. What state is Greendale Community College in? ''')
+    if ans == 'Colorado' or ans == '0':
+                score += 1
+    else: print(wrong)
+        
+while score == 9:
+    ans = input('''10. What is the only country that begins with a Y?''')
+    if ans == 'Yemen' or ans == 'yemen' or ans == '0':
+                score += 1
+                print('Round 1 Complete!')
+
+
+import time
+time.sleep(5)
+print('''                                             
+
+
+                                                  ***Welcome to round 2***
+                                                  Guess the film poster!
+                                    To get a hint for any question in round 2, type in ENHANCE
+      
+                                                            ''')
+time.sleep(2)
+while score == 10:
+        ans =input(Round2.question1)
+        if ans == 'The Matrix' or ans == 'Matrix' or ans == 'matrix' or ans == 'the matrix' or ans == '0':
+                score += 1
+
+        elif ans == 'ENHANCE':
+                Round2.question1 = Round2.question1Easy
+
+        else: print('Try Again')        
+
+while score == 11:
+        ans =input(Round2.question2)
+        if ans == 'Scarface' or ans == '0':
+                score += 1
+
+        elif ans == 'ENHANCE':
+                Round2.question2 = Round2.question2Easy
+
+        else: print('Try Again')   
+
+while score == 12:
+        ans =input(Round2.question3)
+        if ans == 'A Clockwork Orange' or ans == 'Clockwork Orange' or ans =='A Clock Work Orange' or ans == 'Clock Work Orange' or ans == '0':
+                score += 1
+
+        elif ans == 'ENHANCE':
+                Round2.question3 = Round2.question3Easy
+
+        else: print('Try Again')       
+
+while score == 13:
+        ans =input(Round2.question4)
+        if ans == 'Jurrassic Park' or ans == 'Jurassic Park' or ans == '0':
+                score += 1
+
+        elif ans == 'ENHANCE':
+                Round2.question4 = Round2.question4Easy
+
+        else: print('Try Again')
+
+while score == 14:
+        ans =input(Round2.question5)
+        if ans == 'Memento' or ans == '0':
+                score += 1
+                print(score)
+
+        elif ans == 'ENHANCE':
+                Round2.question5 = Round2.question5Easy
+
+        else: print('Try Again')     
+
+while score == 15:
+        ans =input(Round2.question6)
+        if ans == 'Dark Knight' or ans == '0':
+                score += 1
+                print(score)
+
+        elif ans == 'ENHANCE':
+                Round2.question6 = Round2.question6Easy
+
+        else: print('Try Again')
+
+while score == 16:
+        ans =input(Round2.question7)
+        if ans == 'Resevoir Dogs' or ans == '0':
+                score += 1
+
+        elif ans == 'ENHANCE':
+                Round2.question7 = Round2.question7Easy
+
+        else: print('Try Again')     
+
+while score == 17:
+        ans =input(Round2.question8)
+        if ans == 'Die Hard' or ans == '0':
+                score += 1
+
+        elif ans == 'ENHANCE':
+                Round2.question8 = Round2.question8Easy
+
+        else: print('Try Again')    
+
+while score == 18:
+        ans =input(Round2.question9)
+        if ans == 'The Silence of the Lambs' or ans == 'Silence of the Lambs' or ans == 'The Silence Of The Lambs' or ans == 'Silence Of The Lambs' or ans == '0':
+                score += 1
+
+        elif ans == 'ENHANCE':
+                Round2.question9 = Round2.question9Easy
+
+        else: print('Try Again')         
+
+while score == 19:
+        ans =input(Round2.question10)
+        if ans == 'The Matrix' or ans == 'Matrix' or ans == 'matrix' or ans == 'the matrix' or ans == '0':
+                score += 1
+
+        elif ans == 'ENHANCE':
+                Round2.question10 = Round2.question10Easy
+
+        else: print('Try Again')     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print('''                                            ***Welcome to round 3***
+      
+      
+                                                            ''')
+
+#+++++1
+if score == 10.1:
 
     ans = input('''1. Shania Twain recently replaced refrences to Brad Pitt with which other actor in live performances of 'That Don't Impress Me Much'?''')
     if ans == 'Ryan Reynolds':
@@ -74,8 +291,6 @@ while score == 9:
     if ans == 'Yemen' or ans == 'yemen':
                 score += 1
             
-while score == 10:
-    os.system('cls')
 
     
     
